@@ -1,0 +1,24 @@
+/* Base styles */
+.phone {
+  width: 100%; /* Makes the image responsive */
+  height: 714px; /* Maintains the aspect ratio */
+  display: none; /* Hide both images by default */
+}
+.laptop {
+  width: 100%; /* Makes the image responsive */
+  height: 715px; /* Maintains the aspect ratio */
+  display: none;
+}
+/* Media query for devices with a width less than 768px (typically phones) */
+@media (max-width: 768px) {
+  .phone {
+    display: block; /* Only show the phone image */
+  }
+}
+
+/* Media query for devices with a width more than 768px (typically tablets, laptops, and desktops) */
+@media (min-width: 769px) {
+  .laptop {
+    display: block; /* Only show the laptop image */
+  }
+}
